@@ -284,3 +284,13 @@ a{color:var(--navy-2)}
 .index-card.has-thumb .index-tag{margin-top:16px}
 .index-card.has-thumb p{margin-bottom:22px}
 .index-grid{margin-top:22px}
+.find-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.find-col{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px}
+.find-col h3{font-size:17px;margin-bottom:12px}
+.find-col ul{list-style:none;margin:0;padding:0}
+.find-col li{padding:8px 0;border-top:1px solid var(--line);font-size:14.5px;line-height:1.35}
+.find-col li:first-child{border-top:0}
+.find-col a{color:var(--navy-2);font-weight:600;text-decoration:none}
+.find-col a:hover{text-decoration:underline}
+@media(max-width:900px){.find-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.find-grid{grid-template-columns:1fr}}
